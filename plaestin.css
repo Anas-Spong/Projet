@@ -1,0 +1,199 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9f9d9dcc;
+}
+header {
+    background: #073902;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+nav {
+    margin: 20px 0;
+}
+nav a {
+    margin: 0 15px;
+    color: #fff;
+    text-decoration:none;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+   transition: background-color 0.3s;  
+}
+nav a:hover {
+    background-color:#0d5406; 
+    color: black; 
+}
+h1{
+    font-size: 36px;
+    margin: 0;
+    color: #ffffff;
+}
+h2{
+    color:#0d5406;
+    font-size: 30px;
+}
+h5{
+    text-decoration: underline;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.profile {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile img {
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    margin-right: 20px;
+}
+.skills {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.skill {
+    background: #e2e2e2;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 5px;
+    flex: 1 1 30%;
+    text-align: center;
+    transition: background 0.3s;
+}
+.skill:hover {
+    background: #4CAF50;
+    color: #fff;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+.cdx-text-input__input{
+    font-size: 19px;
+}
+button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+}
+.login {
+    font-size: 16px;
+    background-color:#000000;
+    color: #ffffff;
+    border: 1px solid #333;
+}
+.subscribe {
+    background-color: #000000;
+    color: white;
+}
+.icon {
+    margin-right: 8px;
+}
+.welcome-message {
+    display: flex;
+    align-items: center;
+    background-color: #000000;
+    padding: 10px20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.icon .welcome-message{
+    font-size: 12px;
+    margin-right: 8px;
+    color: #ffffff;
+}
+.text {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+button:hover {
+    background-color:#0d5406; 
+}
+
+.arrow {
+    margin-right: 8px; 
+}
+.button{
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color:#0d5406; 
+    color: white;
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-size: 16px; 
+    transition: background-color 0.3s;
+}
+label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+input[type="text"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.forgot-password {
+    font-size: 0.9em;
+    color: #000400; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+input[type="text"],
+input[type="number"]{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+}
+input[type="email"]{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+}
+
+textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    
+}
+select{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}

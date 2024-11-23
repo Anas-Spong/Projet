@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon projet</title>
+    <link rel="stylesheet" href="projet.css">
+    <style>
+    div.at-container {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		height: 100%;
+	}
+	.at-item {
+		color: white; font-weight:bold; font-size:2em;
+		animation-name: focus-in-expand-top;
+		animation-duration: 1.2s;
+		animation-timing-function: linear;
+		animation-delay: 0.2s;
+		animation-iteration-count: 3;
+		animation-direction: normal;
+		animation-fill-mode: none;
+			
+	
+	}
+	@keyframes focus-in-expand-top {
+			
+		0% {
+			letter-spacing:-.5em;
+			transform:translateY(-300px);
+			filter:blur(12px);
+			opacity:0;
+		}
+		0% {
+			transform:translateY(0);
+			filter:blur(0);
+			opacity:1;
+		}
+	}
+    footer{
+        background-color: white;
+        color:black;
+        border-radius: 10px;
+        padding: 20px;
+    }
+    h2{
+        color: blue;
+    }
+    strong{
+        color: blue;
+    }
+    #aa{
+        text-align: center;
+        color:white;
+        background: linear-gradient(to right ,black ,blue,rgb(202, 194, 194)); 
+    }
+</style>
+
+</head>
+<body>
+    <header>
+        <p align="left">&nbsp;&nbsp; ➔ bienvenue sur notre site !</p>
+        <div class='at-container'>
+            <div class='at-item' ><h1>Mon projet</h1></div>
+        </div>
+     
+        <br>
+   
+        <nav>
+            <a href="C.V.html">Mon portfolio</a>
+            <a href="LFR.html">Lycée</a>
+            <a href="palestine.html">Palestine</a>
+            <a href="dvr.html">Agro Tunisie</a>
+        </nav>
+        <br>
+    </header>
+<br>
+<br>
+    <footer>
+        <h2>Contact</h2>
+        <ul>
+            <li>14 , passage Dubail (Métro Gare de barcelone,Dubai)</li>
+            <li>75010 TUNIS</li>
+            <li>spong88@gmail.com</li>
+            <li>+216 20 019 989</li>
+        </ul>
+        <strong><p>Suivez-nous sur :</p></strong>
+        <a href="https://www.facebook.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAn1JREFUSEvFll1oz1EYxz+LRsu83WxygaSIXLmQJuXCXNokFyhyRUSyxM3ukJfalEutlLU0K5m4cSNlYrUScuO1vCTZGmmLOF+dv87/OOd3zv/nYk/tYr//c57P85znOc/z1DFFUjdFXGoFTwPWAouBBdbpd8BrYAj4mRtILngZcBxoA+ZGjH8BrgGngBcpB1LgBuA0sB9QtDnyAzgHdAKTsQNF4EXATWBlDi2g8xDYAigV/0gMvAK4B8wvCa0cE3SdrYEqUyFwsy0URZySj8Bd4CXwHZgObAWWOwefWviYaywE7gO2p4jGuPT2AaOe7kFzUxe8bxeBA0VgefosA6ooVkeezyFT+V2eDRWZnuD7ync/4svArgywrnPA05Nh/bUDitqXMyYdx0LgeuATMDsDrJt57uj129wWHdXbXhoCbwTuZEClIufGra4cnsg899dh96p3Az2ZBhqBr1Z3luNE6rje9XUpueAOQHnIkbLgw0C3Dz4KnI1QXwFLcjwCrgLbIrpinPfBqmZVdUhqAT8GVkXs7AB6fbDG3f3IgaqKLIhcg+SbmVAzIjprgGEfrHan0aZi8UXd6U9urJx0Jo+q+oT9rtwfiUBlQ73/lw/W/znvUXpliusKsLPilN+5dBUaZykpA1ben8TA+n7LTKfNCXKtYN1kVaXHxqKGwLwCeC3gD4Dme9UUiy0CG8xSd9usPTMj8Fyw2qpa8SPfTtHq0wIMAnMC8BywBs4ms/6MhJxPLXsLbSfS+uJKCnzDrDt7zHj8HEtXClx5cuuBvabBtAJNkef01qbnEvAg9SxywL4N9ew3zvahbiVngtvk/0Sccr7U72UiLgXyD/0GGLB0H1VMfAgAAAAASUVORK5CYII="/></a>
+        <a href="https://www.instagram.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoxJREFUSEvl1kvozmkUwPHPXxaKGixcEkLTUGhk4X6NzcitWFiZmCkLCzaIsXFJuWXBgkgpq5mNy2ws3K8lZhrkWpSQSxILG/I7+v319uv3/N73nVf9lWfzvj2/c873Oec5l6dNB622DuL65sF98SM61YnQB9zH03qRrPK4D7ZhFnrUM1T4/hp/Y1XqECnw3MzDwxm4a5PAovg7LMLx4ocycO9M+A5+aBHarv4KPyF+v6wy8AEsaQH6AJ0xsMbGfvxeBQ6FuJ9u/xP8D0bluv9heP7/LbrjY7vdoscD8KgONDzairsI+bGYj0jGWvB1/FxjqxdepMCjcbUCvBo7EGVTuyIfYn8p7uE9RhRkwvubKfAUnE6Al2MPhmYGFmJiLncOf+YJuRMrE/oRmSsp8EycKFG8kIMiO3djRkEmdOJgcU3/5ocrmhmPS82CF+MQ1mUZuynh0VpswUb8USIzARebBUdYw+voRr8kwEcRjWdBHvqi2GTEtXxexayehpMlhqfjVN6BooWWrSNZVs+rAE/FmRQ4PgaguJZhb5ata/JwloEj46PMNiPCXlyTstw43yw4sjGycnDWCHZhdsFqeLsiS7CXuI1+JeBxuJwCx6nOJkLZXk6D8nCOyeXC2F94iH3F1lhjK3rEtRR4ZF4OCbYI5/ba1pcL1jaQlG40lBspcEymZynNfD8mV5RN1Gy0zKjPOVkOxGOhakX4n6TAsf84cUd17FZ+foOeVUMitNdnT5wNrVBKdGPU/la7XzaPYzTeyt9YX4Mf3g5p5CEQsP7ZXI0SaZ+trRwgHhUHiwaqHntd8mn0awOvy6LdGPjHENOqtDwbeVdHpg9r0uW4qudVOo2Am2Q2Jv79gT8BaMhxHzndaXwAAAAASUVORK5CYII="/></a>
+        <a href="https://myaccount.google.com/?pli=1&nlr=1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbBJREFUSEvt1j9sTlEYx/FPg8RgKLEZTSxtF4nFZLNhIaQ2MTRNG2liwmKQaOPPICYJiQHd2sVo64BuXcTUsRWpjeA+cl45rnvf+77eW61wtnvPc37f8/w5zzlDtmgMbRHXf/Afi/y2CfUR3MZ+TGJxwBAcwzh2YQ6vO3q5x4fwCrsz2E1cwZc+N7ADNzCTrdvASLGRd/EvB09htgLwEmew2iP8AJ7iaIX9RBHNe2XwNVytEX+P81hogJ/AoyJde2vsrhf/g/OTx93AHZ07uIxPJeHI4S2ER93Gb4NDdBmnigi8TYSDeJ7y15SNgcAh/hGXEEUUOdvTREzzA4N75Pxi9neAo0rPlQqxm8df8TidgrJdpcdxlL6XemmMYhjz2NcQ43WcxIe8S2Vr+gZHJUdjCHi01aqxlKDRaGKzP9pjE7juHI/hTVq8M3W38nm9i2l8TnatgzubP42H6eMCnlWkp1WPc/3D6fJYqamLTQN3q7NNC3VTA+kLfBH3KxTz4moCdubrwMF4EEb5fRyvjic4XlJvAxxN5QXOFjfYWhncqzet2G2bx14r3vQi8u95/A2I1V0fhbK+uwAAAABJRU5ErkJggg=="/></a>
+        <a href="https://www.linkedin.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt109LFlEUx/HPAy6CQAQ1ktCFLRRC2rkL8w2UL0NUqNa6EnKZBIWrdr0AQdwJCq5aRyAogoFo5qalC6m5cAeuo8QzPPPMCHpWM3c453vP75z7Z1oaslZDXLcKPILRipU4xM80ZjHjIRxTuRJ/8QQnObwIfontirPNw01jpwx4H8N40OGESoFfYQMPsZmpMdUBvG3wLzxOQLNYqwN8iX78ibAP2fO7OsCBsZXV9wueYQF9dYE74FxzbbvGwXMmkfpNfP8aVQjfJxEacBW7OMMLLGdLJyzN1EqBBzOJz6P3J8zjPZbiWCjBAS4KkB58x3gyXik4jzuB02xivxPQHD53E7yO1wir4Dl+RFgow7dugXuTHgiMRaxEWDhsjroFfhprnMf/iLfxZaAgfakaP0qcb2quMewlWYWdLdQ2WGjM0OW53YOvrMDieXz3pG5sr64N3NhlL2TYyPW2Smn/G+tW/UnUkvU/UCiAH3HBfpQAAAAASUVORK5CYII="/> </a>
+    </footer>
+<br>
+<br>
+<footer id="aa">
+        <br>
+        &copy; Creation de site web  23-11-2024
+        <br>
+        <br>
+</footer>
+</body>
+</html>
