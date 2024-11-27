@@ -48,13 +48,61 @@
         color: blue;
     }
     strong{
-        color: blue;
+        color:white;
     }
     #aa{
         text-align: center;
         color:white;
         background: linear-gradient(to right ,black ,blue,rgb(202, 194, 194)); 
     }
+    label {
+    display: block;
+    margin: 10px 0 5px;
+    text-align: left;
+}
+input[type="text"],
+input[type="password"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+.forgot-password {
+    font-size: 0.9em;
+    color: #000400; 
+    margin-bottom: 10px;
+    text-align: left;
+}
+input[type="text"],
+input[type="number"]{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+
+}
+input[type="email"]{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+}
+button{
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+}
+button:hover {
+    background: linear-gradient(to right,#000428,#004e92);
+    color: white;
+}
+
+
+
 
 </style>
 
@@ -72,29 +120,50 @@
             <a href="C.V.html">Mon portfolio</a>
             <a href="LFR.html">Lycée</a>
             <a href="palestine.html">Palestine</a>
-            <a href="dvr.html">Agro Tunisie</a>
+            <a href="dvr.html">Agro-Tunisie</a>
         </nav>
         <br>
     </header>
 <br>
 <br>
     <footer>
-        <h2>Contact</h2>
-        <ul>
-            <li>14 , passage Dubail (Métro Gare de barcelone,Dubai)</li>
-            <li>75010 TUNIS</li>
-            <li>spong88@gmail.com</li>
-            <li>+216 20 019 989</li>
-        </ul>
+        <h2>Presentation du site </h2>       
+        Le site web [projet] a été conçu pour mettre en lumière quatre projets innovants qui visent à transformer plusieurs domaines . Chaque projet présente une approche unique et des solutions créatives aux défis contemporains. Le Projet 1, intitulé [ Mon portfolio]. Ensuite, le Projet 2, [Mon lycee],, avec pour objectif de [education]. Le Projet 3, nommé [Palestine]. Enfin, le Projet 4, [Agro tunisie], vise à [ tunis], en intégrant des solutions innovantes comme[...]. Ensemble, ces projets illustrent notre engagement envers l'innovation et le progrès, tout en offrant des perspectives passionnantes pour l'avenir.
+        <section id="connecter">
+            <h2>Identifiants personnels</h2>
+            <label for="email"><strong>Nom d'utilisateur :</strong> </label>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA7xJREFUSEvFl3fIj2sYxz/IHp2yZcXhhMimKBIiK1mHhMg4ji0kOyMroyQzf8geGQkndLJHiMieiZAie7u/uh7dv9vveZ+fv1z1ej33te5rfa/7zcZvomy/yS+/6jg7UB+oAJSySz8EbgGnga+ZBpKp47+A4UBnoGiM8afAZmARcDPpAkmOCwPLgU5Jhjy+ot4CDAaexell5bgccAD405RlcDdw1vsRq4791APawI/yXQVaAA/SOY9zrHSeA0qb0n3gb+BEQuSNgPVAWU9PF3oS6qVznBM4ak0k+TXAMOCVKecDWlmDSf86sA94b/wCwBKgt32fdJlrDHz2nadzPBsYZ0Jy2tdTUPr3uBpWCyK4AHQA7nnn0u1j3zOBiVk5VorUkYpa6a0KvDaFXMA1oHxMum+bfBR5IeCKjd1HoJJ/sTDihcAIM6x6HfecTAMmu5t/AoYAG42nqKQnW5OAGZ5OM+CgfS8ARkc837H+/wgo7rrzjFfjSPYiUN3dfJ3LSs8g6k1AV+v2ugHvPFDTMqhSfSffsRrgiJ0LBEYGBt4BuYFZwISAp7PxLqKXgFLskxrtXztoYAiX4lidu9gEugBbAwOXrYZrgV4BT1no4ZDtkmXFZ3e3EdPZP8CyMGJ13XTTKJIGdYRgA2ys1On/maxGSx2cF1jqRRc5V8NG3a5pmRs6VmrVACItANXbp4KAoi4TnEefd4Ealm5fpKS7sBaJaJQ1YkqqlV6BvKitzWvoQ0ZWGjT6vG0uQ0PTXDayJagVaclINsVxQw8SNTZR2tMFWNmhW3Nj7HUodScmCzqe4v6ZanytVE1MiuM8rviPrSt3AB0DY9rFaiDNt0BENRW9dQilNB8GNFZfAr1dbszaOXx4bqP6IXSs79UGkRodgbu6VCTUUWQVs4hMrBtAa3sY6Fvze8qNoFBvhSvFwEg/RK4mwP/G1FqrDWgnaxUWs3PdWGASQWl+ayoZF2kT1XI48MLht8BDlxYJJ47FOdb5TrcS25uAbqmGUqpEgjyNjDLik8okHJhjh2oglSBCuO3hYyLddvrDIgrHRnM8KCHVq4B+gYxmWFArVPtBcQ+BKsAhhzIlPFl1cQT4cf5bAvs9prBA5VPtUyirp48aSfWOXiFa5CqDUEqG9KTJYWAj2f5WEnW/SJE2tY7/6aJJjz29NgRzY7zxScj299rOs3q/iRNOchzpKer5brF3S/C6ARgb98DLpMZx9oXXesxrr+q3SC8PAYh+R++ypKz88l8SiQYzFcg01Znay1juGzC8sh8i2SWvAAAAAElFTkSuQmCC"/><input type="text" id="email" placeholder="Votre Nom" required>
+            <br>
+            <label for="email"><strong>Nom d'utilisateur :</strong> </label>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA7xJREFUSEvFl3fIj2sYxz/IHp2yZcXhhMimKBIiK1mHhMg4ji0kOyMroyQzf8geGQkndLJHiMieiZAie7u/uh7dv9vveZ+fv1z1ej33te5rfa/7zcZvomy/yS+/6jg7UB+oAJSySz8EbgGnga+ZBpKp47+A4UBnoGiM8afAZmARcDPpAkmOCwPLgU5Jhjy+ot4CDAaexell5bgccAD405RlcDdw1vsRq4791APawI/yXQVaAA/SOY9zrHSeA0qb0n3gb+BEQuSNgPVAWU9PF3oS6qVznBM4ak0k+TXAMOCVKecDWlmDSf86sA94b/wCwBKgt32fdJlrDHz2nadzPBsYZ0Jy2tdTUPr3uBpWCyK4AHQA7nnn0u1j3zOBiVk5VorUkYpa6a0KvDaFXMA1oHxMum+bfBR5IeCKjd1HoJJ/sTDihcAIM6x6HfecTAMmu5t/AoYAG42nqKQnW5OAGZ5OM+CgfS8ARkc837H+/wgo7rrzjFfjSPYiUN3dfJ3LSs8g6k1AV+v2ugHvPFDTMqhSfSffsRrgiJ0LBEYGBt4BuYFZwISAp7PxLqKXgFLskxrtXztoYAiX4lidu9gEugBbAwOXrYZrgV4BT1no4ZDtkmXFZ3e3EdPZP8CyMGJ13XTTKJIGdYRgA2ys1On/maxGSx2cF1jqRRc5V8NG3a5pmRs6VmrVACItANXbp4KAoi4TnEefd4Ealm5fpKS7sBaJaJQ1YkqqlV6BvKitzWvoQ0ZWGjT6vG0uQ0PTXDayJagVaclINsVxQw8SNTZR2tMFWNmhW3Nj7HUodScmCzqe4v6ZanytVE1MiuM8rviPrSt3AB0DY9rFaiDNt0BENRW9dQilNB8GNFZfAr1dbszaOXx4bqP6IXSs79UGkRodgbu6VCTUUWQVs4hMrBtAa3sY6Fvze8qNoFBvhSvFwEg/RK4mwP/G1FqrDWgnaxUWs3PdWGASQWl+ayoZF2kT1XI48MLht8BDlxYJJ47FOdb5TrcS25uAbqmGUqpEgjyNjDLik8okHJhjh2oglSBCuO3hYyLddvrDIgrHRnM8KCHVq4B+gYxmWFArVPtBcQ+BKsAhhzIlPFl1cQT4cf5bAvs9prBA5VPtUyirp48aSfWOXiFa5CqDUEqG9KTJYWAj2f5WEnW/SJE2tY7/6aJJjz29NgRzY7zxScj299rOs3q/iRNOchzpKer5brF3S/C6ARgb98DLpMZx9oXXesxrr+q3SC8PAYh+R++ypKz88l8SiQYzFcg01Znay1juGzC8sh8i2SWvAAAAAElFTkSuQmCC"/><input type="text" id="email" placeholder="Votre prenom" required>
+            <br>
+            <label for="email"><strong>Adresse email :</strong> </label>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAA7xJREFUSEvFl3fIj2sYxz/IHp2yZcXhhMimKBIiK1mHhMg4ji0kOyMroyQzf8geGQkndLJHiMieiZAie7u/uh7dv9vveZ+fv1z1ej33te5rfa/7zcZvomy/yS+/6jg7UB+oAJSySz8EbgGnga+ZBpKp47+A4UBnoGiM8afAZmARcDPpAkmOCwPLgU5Jhjy+ot4CDAaexell5bgccAD405RlcDdw1vsRq4791APawI/yXQVaAA/SOY9zrHSeA0qb0n3gb+BEQuSNgPVAWU9PF3oS6qVznBM4ak0k+TXAMOCVKecDWlmDSf86sA94b/wCwBKgt32fdJlrDHz2nadzPBsYZ0Jy2tdTUPr3uBpWCyK4AHQA7nnn0u1j3zOBiVk5VorUkYpa6a0KvDaFXMA1oHxMum+bfBR5IeCKjd1HoJJ/sTDihcAIM6x6HfecTAMmu5t/AoYAG42nqKQnW5OAGZ5OM+CgfS8ARkc837H+/wgo7rrzjFfjSPYiUN3dfJ3LSs8g6k1AV+v2ugHvPFDTMqhSfSffsRrgiJ0LBEYGBt4BuYFZwISAp7PxLqKXgFLskxrtXztoYAiX4lidu9gEugBbAwOXrYZrgV4BT1no4ZDtkmXFZ3e3EdPZP8CyMGJ13XTTKJIGdYRgA2ys1On/maxGSx2cF1jqRRc5V8NG3a5pmRs6VmrVACItANXbp4KAoi4TnEefd4Ealm5fpKS7sBaJaJQ1YkqqlV6BvKitzWvoQ0ZWGjT6vG0uQ0PTXDayJagVaclINsVxQw8SNTZR2tMFWNmhW3Nj7HUodScmCzqe4v6ZanytVE1MiuM8rviPrSt3AB0DY9rFaiDNt0BENRW9dQilNB8GNFZfAr1dbszaOXx4bqP6IXSs79UGkRodgbu6VCTUUWQVs4hMrBtAa3sY6Fvze8qNoFBvhSvFwEg/RK4mwP/G1FqrDWgnaxUWs3PdWGASQWl+ayoZF2kT1XI48MLht8BDlxYJJ47FOdb5TrcS25uAbqmGUqpEgjyNjDLik8okHJhjh2oglSBCuO3hYyLddvrDIgrHRnM8KCHVq4B+gYxmWFArVPtBcQ+BKsAhhzIlPFl1cQT4cf5bAvs9prBA5VPtUyirp48aSfWOXiFa5CqDUEqG9KTJYWAj2f5WEnW/SJE2tY7/6aJJjz29NgRzY7zxScj299rOs3q/iRNOchzpKer5brF3S/C6ARgb98DLpMZx9oXXesxrr+q3SC8PAYh+R++ypKz88l8SiQYzFcg01Znay1juGzC8sh8i2SWvAAAAAElFTkSuQmCC"/><input type="text" id="email" placeholder="Votre email" required>
+            <br>
+            <label for="password"><strong>Mot de passe :</strong> </label>
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWpJREFUSEvt1j9LHkEQx/GPELCwsAqKYBAFsdVop5AU2ukLCIG0YqFgIShWAcugVpIyhLyAgBACgqIpBbGzUFAQIkGwsUjjn+dki3Bmvb1H4QG57fZm5vfdmZsdtkmDVlODuOoBv0A/XodD72IPV2WSKAPOfOcxh9Yc5AIfsZIKLwP+ivcFwsuYTYGngt/hWxA8CeLbYf8Gn/Aq7EexUQRPBR+hG1lJe3GeE26vVeMQLfiFkacA9wTRTGsRSxHR7PsCrkMPXD4ET8l4GDtBZBzrEcGJWrd/D7YhZN0eXSng7B9uBoW32IqopfrdhVfgf6s4gDH04UMwfMFxpNRdOb8D/AxT7V5IrNQzZaZQwdWZxOe8Twz8By+L7mKi/RSdqeCbRNFUt3sJxjKuwKkljflVpY6OzKq5nn9znaHtsWmG+N/oSB2Z01h9IvBULYm1VHDmN4jsxdhc5wH+4gf2/xef8gKpk/twWMPAt+OeQh8W8oqIAAAAAElFTkSuQmCC" /><input type="password" id="password" placeholder="Votre mot de passe" required>
+            <div class="forgot-password">
+                <a href="https://myaccount.google.com/?pli=1&nlr=1" style="color: blue;">mot de passe oublie ?</a>
+                <br>
+                <center><button type="submit">Se connecter</button></center>
+            </div>    
+        </section>
+    </footer>
+<br>
+<br>
+<footer id="aa">
+        <h2>Contact </h2>
+            <p>14 , passage Dubail (Métro Gare de barcelone,Dubai)</p>
+            <p>75010 TUNIS</p>
+            <p>spong88@gmail.com</p>
+            <p>+216 20 019 989</p>
         <strong><p>Suivez-nous sur :</p></strong>
         <a href="https://www.facebook.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAn1JREFUSEvFll1oz1EYxz+LRsu83WxygaSIXLmQJuXCXNokFyhyRUSyxM3ukJfalEutlLU0K5m4cSNlYrUScuO1vCTZGmmLOF+dv87/OOd3zv/nYk/tYr//c57P85znOc/z1DFFUjdFXGoFTwPWAouBBdbpd8BrYAj4mRtILngZcBxoA+ZGjH8BrgGngBcpB1LgBuA0sB9QtDnyAzgHdAKTsQNF4EXATWBlDi2g8xDYAigV/0gMvAK4B8wvCa0cE3SdrYEqUyFwsy0URZySj8Bd4CXwHZgObAWWOwefWviYaywE7gO2p4jGuPT2AaOe7kFzUxe8bxeBA0VgefosA6ooVkeezyFT+V2eDRWZnuD7ync/4svArgywrnPA05Nh/bUDitqXMyYdx0LgeuATMDsDrJt57uj129wWHdXbXhoCbwTuZEClIufGra4cnsg899dh96p3Az2ZBhqBr1Z3luNE6rje9XUpueAOQHnIkbLgw0C3Dz4KnI1QXwFLcjwCrgLbIrpinPfBqmZVdUhqAT8GVkXs7AB6fbDG3f3IgaqKLIhcg+SbmVAzIjprgGEfrHan0aZi8UXd6U9urJx0Jo+q+oT9rtwfiUBlQ73/lw/W/znvUXpliusKsLPilN+5dBUaZykpA1ben8TA+n7LTKfNCXKtYN1kVaXHxqKGwLwCeC3gD4Dme9UUiy0CG8xSd9usPTMj8Fyw2qpa8SPfTtHq0wIMAnMC8BywBs4ms/6MhJxPLXsLbSfS+uJKCnzDrDt7zHj8HEtXClx5cuuBvabBtAJNkef01qbnEvAg9SxywL4N9ew3zvahbiVngtvk/0Sccr7U72UiLgXyD/0GGLB0H1VMfAgAAAAASUVORK5CYII="/></a>
         <a href="https://www.instagram.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAoxJREFUSEvl1kvozmkUwPHPXxaKGixcEkLTUGhk4X6NzcitWFiZmCkLCzaIsXFJuWXBgkgpq5mNy2ws3K8lZhrkWpSQSxILG/I7+v319uv3/N73nVf9lWfzvj2/c873Oec5l6dNB622DuL65sF98SM61YnQB9zH03qRrPK4D7ZhFnrUM1T4/hp/Y1XqECnw3MzDwxm4a5PAovg7LMLx4ocycO9M+A5+aBHarv4KPyF+v6wy8AEsaQH6AJ0xsMbGfvxeBQ6FuJ9u/xP8D0bluv9heP7/LbrjY7vdoscD8KgONDzairsI+bGYj0jGWvB1/FxjqxdepMCjcbUCvBo7EGVTuyIfYn8p7uE9RhRkwvubKfAUnE6Al2MPhmYGFmJiLncOf+YJuRMrE/oRmSsp8EycKFG8kIMiO3djRkEmdOJgcU3/5ocrmhmPS82CF+MQ1mUZuynh0VpswUb8USIzARebBUdYw+voRr8kwEcRjWdBHvqi2GTEtXxexayehpMlhqfjVN6BooWWrSNZVs+rAE/FmRQ4PgaguJZhb5ata/JwloEj46PMNiPCXlyTstw43yw4sjGycnDWCHZhdsFqeLsiS7CXuI1+JeBxuJwCx6nOJkLZXk6D8nCOyeXC2F94iH3F1lhjK3rEtRR4ZF4OCbYI5/ba1pcL1jaQlG40lBspcEymZynNfD8mV5RN1Gy0zKjPOVkOxGOhakX4n6TAsf84cUd17FZ+foOeVUMitNdnT5wNrVBKdGPU/la7XzaPYzTeyt9YX4Mf3g5p5CEQsP7ZXI0SaZ+trRwgHhUHiwaqHntd8mn0awOvy6LdGPjHENOqtDwbeVdHpg9r0uW4qudVOo2Am2Q2Jv79gT8BaMhxHzndaXwAAAAASUVORK5CYII="/></a>
         <a href="https://myaccount.google.com/?pli=1&nlr=1"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAbBJREFUSEvt1j9sTlEYx/FPg8RgKLEZTSxtF4nFZLNhIaQ2MTRNG2liwmKQaOPPICYJiQHd2sVo64BuXcTUsRWpjeA+cl45rnvf+77eW61wtnvPc37f8/w5zzlDtmgMbRHXf/Afi/y2CfUR3MZ+TGJxwBAcwzh2YQ6vO3q5x4fwCrsz2E1cwZc+N7ADNzCTrdvASLGRd/EvB09htgLwEmew2iP8AJ7iaIX9RBHNe2XwNVytEX+P81hogJ/AoyJde2vsrhf/g/OTx93AHZ07uIxPJeHI4S2ER93Gb4NDdBmnigi8TYSDeJ7y15SNgcAh/hGXEEUUOdvTREzzA4N75Pxi9neAo0rPlQqxm8df8TidgrJdpcdxlL6XemmMYhjz2NcQ43WcxIe8S2Vr+gZHJUdjCHi01aqxlKDRaGKzP9pjE7juHI/hTVq8M3W38nm9i2l8TnatgzubP42H6eMCnlWkp1WPc/3D6fJYqamLTQN3q7NNC3VTA+kLfBH3KxTz4moCdubrwMF4EEb5fRyvjic4XlJvAxxN5QXOFjfYWhncqzet2G2bx14r3vQi8u95/A2I1V0fhbK+uwAAAABJRU5ErkJggg=="/></a>
         <a href="https://www.linkedin.com"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAAAXNSR0IArs4c6QAAAWxJREFUSEvt109LFlEUx/HPAy6CQAQ1ktCFLRRC2rkL8w2UL0NUqNa6EnKZBIWrdr0AQdwJCq5aRyAogoFo5qalC6m5cAeuo8QzPPPMCHpWM3c453vP75z7Z1oaslZDXLcKPILRipU4xM80ZjHjIRxTuRJ/8QQnObwIfontirPNw01jpwx4H8N40OGESoFfYQMPsZmpMdUBvG3wLzxOQLNYqwN8iX78ibAP2fO7OsCBsZXV9wueYQF9dYE74FxzbbvGwXMmkfpNfP8aVQjfJxEacBW7OMMLLGdLJyzN1EqBBzOJz6P3J8zjPZbiWCjBAS4KkB58x3gyXik4jzuB02xivxPQHD53E7yO1wir4Dl+RFgow7dugXuTHgiMRaxEWDhsjroFfhprnMf/iLfxZaAgfakaP0qcb2quMewlWYWdLdQ2WGjM0OW53YOvrMDieXz3pG5sr64N3NhlL2TYyPW2Smn/G+tW/UnUkvU/UCiAH3HBfpQAAAAASUVORK5CYII="/> </a>
-    </footer>
-<br>
-<br>
-<footer id="aa">
+        <br>
+        <br>
         <br>
         &copy; Creation de site web  23-11-2024 || #𝐀/𝐒𝐆
         <br>
