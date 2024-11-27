@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon projet</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to right,#000428,#004e92);
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: white;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+        input[type="password"] {
+            padding: 10px;
+            margin: 10px 0;
+            width: 80%;
+            max-width: 300px;
+        }
+        button {
+            padding: 10px 15px;
+            background: linear-gradient(to right,#000428,#004e92);
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background: linear-gradient(to right,#000428,#004e92);
+
+        }
+        h2{
+            color: blue;
+        }
+        div{
+          
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Entrez le Mot de Passe</h2>
+        <input type="password" id="password" placeholder=" saisir votre Mot de passe">
+        <br>
+        <button onclick="checkPassword()">Valider</button>
+        <p id="message" style="color:blue;"></p>
+    </div>
+
+    <script>
+        const correctPassword = "ssanasss"; 
+
+        function checkPassword() {
+            const inputPassword = document.getElementById("password").value;
+            const message = document.getElementById("message");
+
+            if (inputPassword === correctPassword) {
+                message.innerHTML = "Accès autorisé !";
+                window.location.href = "projet.html"; 
+            } else {
+                message.innerHTML = "Mot de passe incorrect. Reessayez !";
+            }
+        }
+    </script>
+    
+</body>
+</html>
