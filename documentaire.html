@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentaire</title>
+    <style>
+        body {
+            background-color: #b3afaf;
+        }
+        header {
+            background: linear-gradient(to right ,black ,blue,rgb(202, 194, 194)); 
+            color: #ffffff;
+            padding: 15px ;
+            border-radius: 10px;
+            text-align: center;
+        }
+        section {
+            border-radius: 20px;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            text-align: center;
+            background: linear-gradient(to right ,black ,blue,rgb(202, 194, 194)); 
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            padding: 15px ;
+            border-radius: 10px;
+        }
+        h3{
+            color:blue;
+        }
+        strong{
+            color:blue;
+        }
+        iframe {
+            width: 100vmin;
+            height: 70vmin;
+            border: 5px solid;
+            border-image: conic-gradient(from var(--angle), blue, black, blue,black,blue, black) 1;
+            animation: 3s rotate linear infinite;
+        }
+        @keyframes rotate {
+            to {
+                --angle: 360deg;
+            }
+        }
+        @property --angle {
+            syntax: '<angle>';
+            initial-value: 0deg;
+            inherits: false;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>" Bienvenue sur le Site Documentaire "</h1>
+    </header>
+    <br>
+    <br>
+    <section>
+        <h2 style="color: #294c60;">description de site</h2>
+    <p>Ce site est une ressource dédiée à l'éducation, offrant des informations et des outils pour les étudiants, les enseignants et les parents. Il propose des articles sur des sujets variés tels que les méthodes d'apprentissage, les ressources pédagogiques, et les conseils pour réussir à l'école. De plus, le site inclut des forums de discussion où les utilisateurs peuvent échanger des idées et poser des questions. L'objectif est de favoriser un environnement d'apprentissage enrichissant et accessible à tous.</p>
+    </section>
+    <br>
+    <section>
+        <h3>Voici des informations du sujet :</h3>
+        <iframe width="916" height="515" src="https://www.youtube.com/embed/Gn4mU1aAl90" title="كيف تنجح رغم التعليم الفاشل ؟" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <ul>
+            <li>Le système éducatif en Tunisie est structuré en plusieurs niveaux, allant de l'éducation préscolaire à l'enseignement supérieur. Il est principalement public et gratuit, ce qui permet un accès large à l'éducation. L'école primaire dure six ans et est suivie par trois ans de collège, puis par trois ans de lycée. Le curriculum est centré sur les matières fondamentales telles que les mathématiques, les sciences, la langue arabe et les langues étrangères.</li>
+            <br>
+            <img src="nvl.jpg"><img src="tn.jpeg" align="right" width="30%" height="25%">
+            <br>
+            <br>
+            <li>La Tunisie a également fait des efforts pour moderniser son système éducatif, en intégrant les technologies de l'information et en réformant les programmes pour mieux répondre aux besoins du marché du travail. Cependant, des défis subsistent, notamment en termes de qualité de l'enseignement, de taux de décrochage scolaire et d'inégalités régionales. L'enseignement supérieur est diversifié, avec plusieurs universités publiques et privées, offrant une large gamme de spécialités. Malgré les avancées, le système éducatif tunisien continue d'évoluer pour améliorer l'employabilité des jeunes et s'adapter aux exigences contemporaines.</li>
+        </ul>
+    </section>
+    <br>
+    <section>
+        <strong>votre commentaire a propos de ce document:</strong>
+        <br>
+        <br>
+        <textarea placeholder="saisir votre commentaire" ></textarea>
+    </section>
+
+    <br>
+    <br>
+    <footer>
+        <p>&copy; date de creation du site Documentaire 24-11-2024 || #𝐀/𝐒𝐆</p>
+    </footer>
+</body>
+</html>
